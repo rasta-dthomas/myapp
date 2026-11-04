@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/banner.css">
 </head>
 <body>
-	<!-- Banner w/ Collapsible-style Navigation Menu -->
+	<!-- Banner with Collapsible-style Navigation Menu -->
 	<header class="banner">
 		<div class="banner-logo">RPG IT Solutions, LLC.</div>
 
