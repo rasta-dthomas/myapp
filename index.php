@@ -2,41 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 	<title>My LAMP Web App</title>
-	<link rel="stylesheet" href="css/banner.css">
+	<link rel="stylesheet" href="css/bannr.css">
 </head>
 <body>
-	<!-- Banner with Collapsible-style Navigation Menu -->
+	<!-- Navigation Menu -->
 	<header class="banner">
-		<div class="banner-logo">RPG IT Solutions, LLC.</div>
-
-		<details class="banner-menu">
-			<summary class="menu-toggle">Menu</summary>
-			<nav class="menu-links">
-				<a href="form/form.php?page=form">Form</a>
-				<a href="phpinfo.php?page=phpinfo">PHP Info</a>
-			</nav>
-		</details>
+		<div class="banner-logo">My Site</div>
+		<nav class="navbar">
+			<a href="form/form.php" class="nav-btn">Form</a>
+			<a href="phpinfo.php" class="nav-btn">PHP Info</a>
+		</nav>
 	</header>
 	<hr>
-
-	<!-- Dynamic Content Area -->
-	<main>
-		<?php
-			$page = isset($_GET['page']) ? $_GET['page'] : 'form';
-
-			switch ($page) {
-				case 'phpinfo':
-					if (file_exists('phpinfo.php')) {
-						include 'phpinfo.php';
-					} else {
-						echo '<p>PHP Info page not found.</p>';
-					}
-					break;
-			}
-		?>
-
-	</main>
-</body>
-</html>

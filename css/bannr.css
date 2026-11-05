@@ -1,0 +1,20 @@
+.navbar {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.nav-btn {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #38CC77;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+	background-color: #2da35f;
+}
